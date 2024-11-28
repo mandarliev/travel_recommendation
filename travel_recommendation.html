@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="travel_recommendation.css" />
+    <title>Travel Bloom</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_logo">
+          <h2>TravelBloom</h2>
+        </div>
+
+        <div class="nav_links">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li><a href="/about-us.html">About us</a></li>
+            <li><a href="/contact-us.html">Contact us</a></li>
+          </ul>
+        </div>
+
+        <form class="nav_search" id="search_form">
+          <input
+            type="text"
+            id="search_input"
+            placeholder="Enter a destination or keyword"
+          />
+          <button type="submit">Search</button>
+          <button type="button" id="clear_form_button">Clear</button>
+        </form>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero_content">
+        <div class="hero_content-left">
+          <h1>EXPLORE DREAM DESTINATION</h1>
+          <p>
+            It encourages exploration of unfamiliar territories, embracing
+            diverse cultures and landscapes, while pursuing the desired
+            destination that captivates the heart and ignites a sense of wonder.
+          </p>
+          <button type="button">BOOK NOW</button>
+        </div>
+
+        <div class="hero_content-right" id="recommendation_search"></div>
+      </div>
+
+      <div class="hero_gradient" />
+    </section>
+
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>
