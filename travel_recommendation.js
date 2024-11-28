@@ -38,7 +38,7 @@ async function getSearchResults() {
   } else {
     const dataValues = Object.values(data);
 
-    searchResults = dataValues.map((value) => {
+    searchResults = dataValues.filter((value) => {
       let results = value.filter((place) => {
         if (
           searchValue === place?.name?.toLowerCase() ||
@@ -49,7 +49,7 @@ async function getSearchResults() {
         }
       });
 
-      return results;
+      return results.length > 0 ? results : [];
     });
 
     searchResults = searchResults.filter((result) => {
