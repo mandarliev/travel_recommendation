@@ -9,7 +9,7 @@ clearFormButton.addEventListener("click", handleFormReset);
 
 async function fetchData() {
   try {
-    const res = await fetch("./travel_recommendation_api.json");
+    const res = await fetch("travel_recommendation_api.json");
 
     const data = await res.json();
 
@@ -23,6 +23,7 @@ async function getSearchResults() {
   let searchResults = [];
   const searchValue = searchInput.value.toLowerCase().trim();
   const data = await fetchData();
+  console.log(data);
 
   const dataKeys = Object.keys(data);
 
