@@ -99,7 +99,7 @@ async function handleFormSubmit(e) {
     ?.map((result) => {
       if (result) return generateHtmlTemplate(result);
 
-      return "Noting found!";
+      return "Nothing found!";
     })
     .join("");
 
